@@ -1,0 +1,41 @@
+
+@keyframes appear {
+    0% {
+        opacity:0;
+        transform: translatex(-100%)
+    }
+    80% {
+    opacity: 1;
+    transform: translatex(10%)
+    }
+    100% {
+        opacity:1;
+        transform: translate(0)
+    }
+    
+}
+@keyframes appearRight {
+    0% {
+        opacity:0;
+        transform: translatex(100%)
+    }
+    80% {
+    opacity: 1;
+    transform: translatex(-10%)
+    }
+    100% {
+        opacity:1;
+        transform: translate(0)
+    }
+}
+
+@keyframes appearbottom {
+    0% {
+        opacity:0;
+        transform: translateY(3rem)
+    }
+    
+    100% {
+        opacity:1;
+        transform: translate(0)
+    }

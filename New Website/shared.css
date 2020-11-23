@@ -1,0 +1,211 @@
+
+@import url('https:fonts.googleapis.com.css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+* { box-sizing: border-box}
+.main-nav {
+    display: none;}
+    html {
+        height: 100%;
+    }
+ main {
+     grid-area: main;
+ }
+body {font-family: Georgia, 'Times New  Roman'; 
+    margin: 0;
+    display: grid;
+    grid-template-rows: 3.5rem auto fit-content(8rem);
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+
+    height: 100%;}
+
+.main-header {
+    background:#2bdbb5;
+    padding: 5px;
+    font-family: cursive;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin: 0; 
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    }
+
+.main-nav__item { display: inline-block; text-decoration: none; margin: 0 10px;
+    vertical-align: -webkit-baseline-middle;}
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+    position: fixed;
+    display: none;
+}
+.toggle-button{
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 3rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+.toggle-button:focus{
+    outline: none;}
+
+    .toggle-button_bar {
+
+    background: black;
+    display: block;
+    margin: 0.6rem 0;
+    height: 0.2rem;
+    width: 100%;
+}
+.mobile-nav{
+    background: white;
+    width: 80%;
+    height: 100vh;
+    z-index: 101;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.mobile-nav_items{
+    text-decoration: none;
+    margin: 0;
+    list-style: none;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+
+
+}
+.mobile-nav_items a{
+    text-decoration: none;
+    margin: 0;
+    color: black;
+    font-size: 1.5rem;
+}
+.mobile-nav_item{
+    margin: 1rem;
+    font: inherit;
+    
+}
+
+.main-header__brand {
+    display:inline-block width: 0; padding: 0;
+ vertical-align: middle;}
+
+ .main-header div{
+     height: 19px;
+     display: flex;
+     align-items: center;
+     justify-content: left;
+ }
+
+     @media (min-width: 460px){
+    .main-nav{
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    vertical-align: middle; text-decoration: none;
+    height: 39px;}
+ }
+
+
+.main-nav__items { margin: 0; 
+    padding: 0; list-style: none;
+    text-align: right;
+} 
+    .main-header__brand { 
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold; 
+    font-size: 22px; 
+    height: 22px;
+}
+    .main-header__brand img{
+        height: 22px;
+    }
+     
+    .main-nav__item a, .mobile-nav_item a { text-decoration: none;color: #0e4f1f; font-weight: bold;padding:0.2rem o 
+   }
+    .main-nav__item a:hover, 
+    .main-nav__item a:active {
+        color: white;
+        border-bottom: solid white 3px;
+        }
+    .special-nav a{ background:#ff1b68 ; color: white; padding: 6px 10px; border-radius: 8px;}
+    .special-nav a:hover, .special-nav a:active {
+        color: #ff1b68; background: white; border: none;
+    }
+    .special-nav {
+        animation: wiggle 200ms 3s 8 reverse;
+    } 
+    
+
+    
+.main-footer{
+    background: black;
+    color: white;
+    margin-top: 10px;
+    grid-area: footer;
+
+}
+.main-footer_links{
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-footer_link {
+    
+    margin:5px 0;
+    text-decoration: none;
+    
+}
+.main-footer_link a {
+    color: white;
+    text-decoration: none; 
+}
+.main-footer_link a:hover ,
+.main-footer_link a:active {color: #ccc ;}
+
+.button{background: rgb(27, 107, 27);
+    color: white;
+    padding: 8px;
+    border: 5px solid rgb(27, 107, 27);
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;}
+.button:hover,
+.button:active{ background: white; color:  rgb(27, 107, 27);}
+
+.open {
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(0);
+    }
+    50 {
+        transform: rotateZ(-10)
+    }
+    100% {
+        transform: rotateZ(10deg);
+    }
+}

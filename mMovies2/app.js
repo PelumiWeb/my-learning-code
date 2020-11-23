@@ -1,0 +1,1 @@
+gsap.from('#coco_btn', { duration: 1, x: '100', ease: 'bounce'})

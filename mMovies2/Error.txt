@@ -1,0 +1,49 @@
+variables 
+
+
+$color-secondary-light: {#ffb900}
+$color-secondary-dark: {#ff7730}
+
+
+$color-tertiary-light: {#2998ff}
+$color-tertiary-dark: {#5643fa}
+
+
+
+ </div>
+            <div class="giftcards">
+                <div class="movie-cards ">
+                    <div class="card-side card-side_front card-side_front-1">
+                        <div class="card__picture card__picture-1">
+                            &nbsp;
+                        </div>
+                        <h3 class="heading_card">
+                            <span class="heading_span heading_span_11">Avengers</span>
+                            <span class="heading_span heading_span_12">End Game</span>
+                            
+                        </h3>
+                        <div class="card_details">
+                            <ul>
+                                <li>Up to 30people</li>
+                                <li>Sleep in cozy hotels</li>
+                                <li>2 tour guides</li>
+                                <li>Difficulty : easy</li>
+                                <li>3 days tour</li>
+                            </ul>
+                        </div>
+                 </div>
+                    <div class="card-side card-side_back card-side_back-1">
+                        <div class="card-cta">
+                            <div class="card_back_box">
+                            <p class="card_price_only">only</p>
+                            <p class="card_price_value">#100</p>
+                            </div>
+                        <a href="#" class="btn btn-white">Watch Now!</a>
+                        </div>
+                </div>
+
+                
+               
+
+
+            </div>

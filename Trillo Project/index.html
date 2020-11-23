@@ -1,0 +1,301 @@
+<DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="https://fonts.googleapis.com/css2?family=Opens+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title> trillo &mdash; Your all in one booking </title>
+   </head> 
+   
+   <body>
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" alt="trillo logo" class="logo">
+            <form action="#" class="search">
+               <input type="text" class="search__input" placeholder="Search Hotels">
+               <button class="search__button">
+                   <svg class="search__icon">
+                       <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                   </svg>
+               </button>
+            </form>
+            <nav class="user_name">
+                <div class="username_icon_box" id="username_icon" >
+                    <div class="hover_chat">
+                            <div class="chat_menu">
+                                    <div class="chat_heading">
+                                     <h2 class="chat_msg">Messages (100)</h2>
+                                     <span class="add_up">+</span>
+                                     </div>
+                                     <div class="chat_content">
+                                         <div class="chat_box">
+                                             <img src="img/chat-1.jpg" alt="Profile Picture" class="chat_img">
+                                             <div class="chat">
+                                             <h3 class="user_chat-name">Goodnews James</h3>
+                                             <p class="user_msg">Guy</p>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="chat_content">
+                                             <div class="chat_box">
+                                                 <img src="img/chat-2.jpg" alt="Profile Picture" class="chat_img">
+                                                 <div class="chat">
+                                                 <h3 class="user_chat-name">James olsen</h3>
+                                                 <p class="user_msg">let's do this</p>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <div class="chat_content">
+                                                 <div class="chat_box">
+                                                     <img src="img/chat-3.jpg" alt="Profile Picture" class="chat_img">
+                                                     <div class="chat">
+                                                     <h3 class="user_chat-name">Bill gates</h3>
+                                                     <p class="user_msg">We gotta go</p>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             <div class="chat_content">
+                                                     <div class="chat_box">
+                                                         <img src="img/chat-4.jpg" alt="Profile Picture" class="chat_img">
+                                                         <div class="chat">
+                                                         <h3 class="user_chat-name">Jeff James</h3>
+                                                         <p class="user_msg">Grow up nigga.</p>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                 <div class="chat_content">
+                                                         <div class="chat_box">
+                                                             <img src="img/chat-5.jpg" alt="Profile Picture" class="chat_img">
+                                                             <div class="chat">
+                                                             <h3 class="user_chat-name">Marcus Rashford</h3>
+                                                             <p class="user_msg">What's up motherfucker</p>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                     <div class="chat_content">
+                                                             <div class="chat_box">
+                                                                 <img src="img/chat-7 (1).jpg" alt="Profile Picture" class="chat_img">
+                                                                 <div class="chat">
+                                                                 <h3 class="user_chat-name">Harry Maguire</h3>
+                                                                 <p class="user_msg">girs like you are one of a kind.</p>
+                                                                 </div>
+                                                             </div>
+                                                         </div>
+                                                         <div class="chat_content">
+                                                                 <div class="chat_box">
+                                                                     <img src="img/chat-7 (2).jpg" alt="Profile Picture" class="chat_img">
+                                                                     <div class="chat">
+                                                                     <h3 class="user_chat-name">Paul Pogba</h3>
+                                                                     <p class="user_msg">i'm a legend, why are you whining</p>
+                                                                     </div>
+                                                                 </div>
+                                                             </div>
+                                     
+                                </div>
+                    </div>
+                    <svg class="username_icon">
+                        <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                     <span class="username_notification">7</span>
+                </div>
+                <div class="username_icon_box" onclick="toggle()">
+                    <svg class="username_icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                    </svg>
+                     <span class="username_notification">13</span>
+                </div>
+                <div class="username_nav_user">
+                        <img src="img/user.jpg" alt="user_photo" class="usernav_user-photo">
+                 <span class="username_">Jonas</span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>Hotel</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                            </svg>
+                            <span>Flight</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span>Car rental</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>Tours</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    &copy; 2017 by trill. All right preserved
+                </div>
+            </nav>
+            <main class="hotel-view">
+                <div class="gallery">
+                    <figure class="gallery__items">
+                        <img src="img/hotel-1.jpg" alt="Photel Hotel 1" class="gallery_photo">
+                    </figure>
+                    <figure class="gallery__items">
+                        <img src="img/hotel-2.jpg" alt="Photel Hotel 2" class="gallery_photo">
+                    </figure>
+                    <figure class="gallery__items">
+                        <img src="img/hotel-3.jpg" alt="Photel Hotel 3" class="gallery_photo">
+                    </figure>
+                </div>
+                <div class="overview">
+                    <h1 class="overview_heading">
+                        Hotel Las Palmas
+                    </h1>
+                    <div class="overview_stars">
+                        <svg class="overview_icon-star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview_icon-star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview_icon-star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview_icon-star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview_icon-star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+                    <div class="overview_location">
+                        <svg class="overview_icon-location">
+                            <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        <button class="btn-inline">
+                            Albufeira, Portugal
+                        </button>
+                        <div class="overview_rating">
+                            <div class="overview_rating-average">8.6</div>
+                            <div class="overview_rating-counting">429 votes</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="description">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ad sunt explicabo omnis delectus voluptas amet vitae assumenda, eveniet minus laboriosam laudantium. Omnis non id eum, magni repellendus optio aliquam.
+                        </p>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ad sunt explicabo omnis delectus voluptas amet vitae assumenda, eveniet minus laboriosam laudantium. Omnis non id eum, magni repellendus optio aliquam.
+                        </p>
+                        <ul class="list">
+                            <li class="list_item">Close to the beach</li>
+                            <li class="list_item">Breakfast included</li>
+                            <li class="list_item">free airport shuttle</li>
+                            <li class="list_item">Free wifi in all rooms</li>
+                            <li class="list_item">Air conditioning and heating</li>
+                            <li class="list_item">Pets allowed</li>
+                            <li class="list_item">We speak all languages</li>
+                            <li class="list_item">Perfect for all families</li>
+                        </ul>
+                        <div class="recommend">
+                            <p class="recommend_count">
+                                Lucy and 3 other fiends recommend this hotel.
+                            </p>
+                            <div class="recommend_friends">
+                                <img src="img/user-3.jpg" alt="Friends-1" class="recommend_photo">
+                                <img src="img/user-4.jpg" alt="Friends-2" class="recommend_photo">
+                                <img src="img/user-5.jpg" alt="Friends-3" class="recommend_photo">
+                                <img src="img/user-6.jpg" alt="Friends-4" class="recommend_photo">
+                            </div> 
+
+                        </div>
+                    </div>
+                    <div class="user-reviews">
+                        <figure class="reviews">
+                            <blockquote class="review_text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Nulla quo deserunt earum vel eveniet sunt!
+                            </blockquote>
+                            <figcaption class="review_capt">
+                                <img src="img/user-1.jpg" alt="user-1" class="review_photo">
+                                <div class="review_user-box">
+                                    <p class="review_user-name">Nick Smith</p>
+                                    <p class="review_user-date">Feb 23rd, 2017</p>
+                                </div>
+                                <div class="review_rating">7.8</div>
+                        </figure>
+                    <div class="user-reviews">
+                        <figure class="reviews">
+                            <blockquote class="review_text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Nulla quo deserunt earum vel eveniet sunt.
+                            </blockquote>
+                            <figcaption class="review_capt">
+                                <img src="img/user-2.jpg" alt="user-2" class="review_photo">
+                                <div class="review_user-box">
+                                    <p class="review_user-name">Mary Thomas</p>
+                                    <p class="review_user-date">Sept 13th, 2017</p>
+                                </div>
+                                <div class="review_rating">9.3</div>
+                        </figure>
+                        <button class="btn-inline">Show all<span>&rarr;</span></button>
+                    </div>
+                 </div>
+                </div>
+                    <div class="cta">
+                        <h2 class="cta_book-now">
+                            Good news! We have 4 free rooms for your swlected dates!
+                        </h2>
+                        <button class="btn">
+                            <span class="btn_visible">Book Now</span>
+                            <span class="btn_invisible">Only four rooms left</span>
+                        </button>
+                    </div>
+
+
+                </div>
+              
+            </main>
+        </div>
+    </div>
+        <script>
+            var iconBox =  document.querySelector('.chat_menu')      
+            
+            function toggle() {
+                   
+           if (iconBox.classList === 'chat_name_active') {
+               iconBox.classList.toggle('chat_name_active')
+           } 
+                else {
+                 iconBox.classList.toggle('chat_name_active')
+           }
+               
+            }
+        
+     
+
+
+        </script>
+   </body>
+
+</html>

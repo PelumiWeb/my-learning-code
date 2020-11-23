@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title> Oluwapelumi's website 
+<head>
+<body>
+<h1>Oluwapelumi</h2>
+<p> the earth rotates all the time<p/>
+<center>
+<p> the earth rotates all the time</p>
+
+
+
+
+
+</body>
+
+
+
+
+</html>

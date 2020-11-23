@@ -1,0 +1,99 @@
+.signup-page {
+    height: 100vh;
+
+}
+main{
+    padding-top: 5rem;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;}
+
+ .signup-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: brown;
+}
+.signup-form label, 
+.signup-form input,
+.signup-form select {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+}
+.form_input::-webkit-input-placeholder{
+background-color: rgba(1, 145, 1, 0.918);
+}
+
+.input:focus{
+    background-color: rgba(0, 128, 0, 0.822);
+}
+
+.signup-form input:not([type="checkbox"]),
+.signup-form select{
+border: 1px solid #ccc;
+padding: 0.2rem 0.5rem;
+font: inherit;
+
+}
+.signup-form input:focus,
+.signup-form select:focus {
+    outline: none;
+    background: #d8f3df;
+    border: #2ddf5c ;
+    
+
+}
+#agree-terms,
+#agree-terms + label{
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+.signup-form button {
+    display: block;
+    margin-top: 1rem;
+}
+.signup-form {
+    padding: 2rem;
+    display: grid;
+}
+label {
+    font-weight: bold;
+}
+
+@media (min-width: 430px)
+{
+    .signup-form {
+    width: 30rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 10rem auto;
+    
+}
+ #title {
+     grid-row: 2/3;
+ }
+
+}
+
+#agree-terms {
+border: 1px solid #ccc;
+background: white;
+width: 1rem;
+height: 1rem;
+-webkit-appearance: none;
+-moz-appearance: none ;
+appearance: none;
+}
+.signup-form #agree-terms:checked {
+    background: #2ddf5c!important;
+    border: #0e4f1d ;
+}
+.invalid,
+.signup-form :invalid {
+    background: #f34444;
+    border-color: #d14d4d;
+}
